@@ -230,3 +230,90 @@ Simple calculator
 5.Exit
 
 Enter your choice:5
+
+**##Student Management System (CLI)**
+
+A simple Command Line Interface (CLI) project built using Python OOP concepts.
+
+**Features**
+
+- Add Student Details
+- View All Students
+- View High Scores (>80)
+- Private variable for marks (__mark)
+- Inheritance (SchoolStudent → Student)
+- Decorator for logging (@log_add)
+- Generator function for filtering high scores
+  
+**Concepts Used**
+  
+- Classes & Objects
+- Inheritance
+- Encapsulation (private variables)
+- Method Overriding
+- Decorators
+- Generators
+- Lists & Loops
+
+**Example Output:**
+
+1. Add Student Detail
+2. View Student Detail
+3. High Score (>80)
+4. Exit
+Enter the choice (1-4): 1
+Enter name: Nethra
+Enter age: 20
+Enter mark: 90
+Enter grade: A
+Adding Student...
+Student Added Successfully!
+
+1. Add Student Detail
+2. View Student Detail
+3. High Score (>80)
+4. Exit
+Enter the choice (1-4): 1
+Enter name: Siva
+Enter age: 21
+Enter mark: 75
+Enter grade: B
+Adding Student...
+Student Added Successfully!
+
+1. Add Student Detail
+2. View Student Detail
+3. High Score (>80)
+4. Exit
+Enter the choice (1-4): 2
+All Students:
+Name: Nethra
+Age: 20
+Mark: 90
+Grade: A
+--
+
+Name: Siva
+Age: 21
+Mark: 75
+Grade: B
+--
+
+1. Add Student Detail
+2. View Student Detail
+3. High Score (>80)
+4. Exit
+Enter the choice (1-4): 3
+High Score (>80):
+Name: Nethra
+Age: 20
+Mark: 90
+Grade: A
+--
+
+1. Add Student Detail
+2. View Student Detail
+3. High Score (>80)
+4. Exit
+Enter the choice (1-4): 4
+Exiting
