@@ -1,0 +1,78 @@
+students = []
+
+def log_add(func):
+    def wrapper(*args, **kwargs):
+        print("Adding Student")
+        result = func(*args, **kwargs)
+        print("Student Added Successfully!")
+        return result
+    return wrapper
+
+class Student:
+    def __init__(self, name, age, mark):
+        self.name = name
+        self.age = age
+        self.__mark = mark  # private variable
+
+    def show(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+        print("Mark:", self.__mark)
+
+
+class SchoolStudent(Student):
+    def __init__(self, name, age, mark, grade):
+        super().__init__(name, age, mark)
+        self.grade = grade
+
+    def show(self):
+        super().show()
+        print("Grade:", self.grade)
+
+    @log_add
+    def add_student(self, stu_list):
+        stu_list.append(self)
+
+
+def high_score(stu_list):
+    for stu in stu_list:
+        if stu._Student_mark > 80:
+            yield stu
+while True:
+    print("\n1. Add Student Detail")
+    print("2. View Student Detail")
+    print("3. High Score (>80)")
+    print("4. Exit")
+
+    ch = int(input("Enter the choice (1-4): "))
+
+    if ch == 1:
+        name = input("Enter name: ")
+        age = int(input("Enter age: "))
+        mark = int(input("Enter mark: "))
+        grade = input("Enter grade: ")
+
+        s = SchoolStudent(name, age, mark, grade)
+        s.add_student(students)
+
+    elif ch == 2:
+        if not students:
+            print("No details found")
+        else:
+            print("All Students:")
+            for stu in students:
+                stu.show()
+                print("-----------")
+
+    elif ch == 3:
+        print("High Score (>80):")
+        for stu in high_score(students):
+            stu.show()
+            print("-----------")
+
+    elif ch == 4:
+        print("Exiting...")
+        break
+
+else:
+   print("Invalid choice! Please enter 1-4")
