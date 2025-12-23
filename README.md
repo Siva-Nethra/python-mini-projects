@@ -293,8 +293,6 @@ Name: Nethra
 Age: 20
 Mark: 90
 Grade: A
-------------------
-
 Name: Siva
 Age: 21
 Mark: 75
