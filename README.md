@@ -233,7 +233,7 @@ Enter your choice:5
 
 ---
 
-**##Student Management System (CLI)**
+## 3. Student Management System (CLI)
 
 A simple Command Line Interface (CLI) project built using Python OOP concepts.
 
