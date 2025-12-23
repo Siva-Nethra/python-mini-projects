@@ -266,7 +266,7 @@ Enter name: Nethra
 Enter age: 20
 Enter mark: 90
 Enter grade: A
-Adding Student...
+Adding Student
 Student Added Successfully!
 
 1. Add Student Detail
@@ -278,7 +278,7 @@ Enter name: Siva
 Enter age: 21
 Enter mark: 75
 Enter grade: B
-Adding Student...
+Adding Student
 Student Added Successfully!
 
 1. Add Student Detail
@@ -291,13 +291,13 @@ Name: Nethra
 Age: 20
 Mark: 90
 Grade: A
---
+------------------
 
 Name: Siva
 Age: 21
 Mark: 75
 Grade: B
---
+------------------
 
 1. Add Student Detail
 2. View Student Detail
@@ -309,7 +309,7 @@ Name: Nethra
 Age: 20
 Mark: 90
 Grade: A
---
+-----------------
 
 1. Add Student Detail
 2. View Student Detail
